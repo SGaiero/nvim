@@ -1,0 +1,20 @@
+vim.cmd("colorscheme gruvbox")
+
+
+vim.opt.syntax = 'enable' -- Habilita el resaltado de sintaxis
+vim.opt.filetype.plugin = true -- Habilita la detección de tipo de archivo para plugins
+vim.opt.filetype.indent = true -- Habilita la detección de tipo de archivo para sangrado
+vim.opt.number = true -- Muestra los números de línea
+vim.opt.relativenumber = false -- Muestra los números relativos
+vim.opt.tabstop = 2 -- Establece el ancho de tabulación en 2 espacios
+vim.opt.shiftwidth = 2 -- Establece el ancho de desplazamiento en 2 espacios
+vim.opt.expandtab = true -- Usa espacios en lugar de tabulaciones
+vim.opt.autoindent = true -- Habilita el autoindentado
+vim.opt.smartindent = true -- Habilita el smartindent
+-- para mejorar los colroes 
+vim.opt.termguicolors = true
+vim.opt.clipboard = "unnamedplus"
+--el cursor siempre queda con 8 espacios para arriba y para abajo
+vim.opt.scrolloff = 8
+vim.opt.signcolumn = "yes"
+vim.opt.isfname:append("@-@")
