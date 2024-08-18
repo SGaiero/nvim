@@ -6,3 +6,7 @@ require('plugins.alpha-nvim')
 
 --Carga la configuracion de lualine
 require('plugins.lualine')
+
+require('plugins.cmp')
+require('plugins.lsp')
+require('plugins.snippets')

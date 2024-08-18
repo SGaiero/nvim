@@ -29,7 +29,33 @@ require('lazy').setup({
   }, 
    { 'goolord/alpha-nvim', config = function() require('alpha').setup(require('alpha.themes.startify').config) end },
    {'nvim-lualine/lualine.nvim', dependencies = {"kyazdani42/nvim-web-devicons"}},
+   {
+    'hrsh7th/nvim-cmp',
+    dependencies = {
+      'hrsh7th/cmp-nvim-lsp',
+      'hrsh7th/cmp-buffer',
+      'hrsh7th/cmp-path',
+      'hrsh7th/cmp-cmdline',
+      'L3MON4D3/LuaSnip',
+      'saadparwaiz1/cmp_luasnip',
+      'onsails/lspkind.nvim', 
+    },
+  },
+
+  -- Configuración del servidor LSP (clangd)
+  {
+    'neovim/nvim-lspconfig',
+  },
+
+  -- Opcional: snippets
+  {
+    'L3MON4D3/LuaSnip',
+    dependencies = {
+      'rafamadriz/friendly-snippets',
+    },
+  },
 })
+
 
 require("config.set")
 require("config.plugins")
