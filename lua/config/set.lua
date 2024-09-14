@@ -1,4 +1,11 @@
-vim.cmd("colorscheme gruvbox")
+vim.cmd("colorscheme onedark")
+vim.o.background = "light"
+vim.cmd([[
+  command! ArduinoCompile :!arduino-cli compile --fqbn esp8266:esp8266:generic %:p:h
+  command! ArduinoUpload :!arduino-cli upload -p /dev/ttyUSB0 --fqbn esp8266:esp8266:generic %:p:h
+  command! ArduinoBuildAndUpload :ArduinoCompile | ArduinoUpload
+]])
+
 
 
 vim.opt.syntax = 'enable' -- Habilita el resaltado de sintaxis

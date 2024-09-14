@@ -14,6 +14,10 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   --Theme gruvbox :)
 	{"morhetz/gruvbox"},
+  {'ishan9299/nvim-solarized-lua'}, 
+  {'NLKNguyen/papercolor-theme'},
+  {'rakr/vim-one'}, 
+  {'navarasu/onedark.nvim'},
   --Tener los archivos y carpetas a la izquierda
   {
     "kyazdani42/nvim-web-devicons",
@@ -54,6 +58,8 @@ require('lazy').setup({
       'rafamadriz/friendly-snippets',
     },
   },
+  {'windwp/nvim-autopairs', event = "InsertEnter"}, 
+  {'stevearc/vim-arduino'},
 })
 
 
