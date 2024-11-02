@@ -18,3 +18,6 @@ require('plugins.nvim-autopairs')
 require('plugins.arduino')
 --Cargla la configuracion de papercolor
 require('plugins.papercolor-theme')
+
+--Carga la configruacion de coc-nvim
+require('plugins.coc-nvim')

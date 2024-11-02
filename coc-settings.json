@@ -1,0 +1,11 @@
+{
+  "suggest.noselect": false, // Permite que la primera sugerencia se seleccione automáticamente
+  "suggest.autoTrigger": "always", // Activa las sugerencias automáticamente
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "python", "c", "cpp"],
+  "python.linting.enabled": true,
+  "coc.preferences.diagnostic.enable": true,
+  "diagnostic.virtualText": true,
+  "tsserver.npm": "/usr/local/bin/npm", 
+  "suggest.acceptSuggestionOnEnter": "smart",  
+
+}

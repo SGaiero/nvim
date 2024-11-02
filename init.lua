@@ -60,6 +60,7 @@ require('lazy').setup({
   },
   {'windwp/nvim-autopairs', event = "InsertEnter"}, 
   {'stevearc/vim-arduino'},
+  {'neoclide/coc.nvim', branch = 'release'}
 })
 
 
