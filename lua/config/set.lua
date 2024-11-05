@@ -1,5 +1,6 @@
-vim.cmd("colorscheme onedark")
-vim.o.background = "light"
+vim.o.background = "dark"
+vim.g.gruvbox_contrast_dark = "soft"
+vim.cmd("colorscheme gruvbox")
 vim.cmd([[
   command! ArduinoCompile :!arduino-cli compile --fqbn esp8266:esp8266:generic %:p:h
   command! ArduinoUpload :!arduino-cli upload -p /dev/ttyUSB0 --fqbn esp8266:esp8266:generic %:p:h
