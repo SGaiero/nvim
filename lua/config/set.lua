@@ -7,15 +7,6 @@ vim.cmd([[
   command! ArduinoBuildAndUpload :ArduinoCompile | ArduinoUpload
 ]])
 
--- Mover línea hacia abajo con Alt + j
-vim.api.nvim_set_keymap('n', '<A-j>', ':m .+1<CR>==', { noremap = true, silent = true })
--- Mover línea hacia arriba con Alt + k
-vim.api.nvim_set_keymap('n', '<A-k>', ':m .-2<CR>==', { noremap = true, silent = true })
-
--- Mover líneas seleccionadas hacia abajo en modo visual con Alt + j
-vim.api.nvim_set_keymap('v', '<A-j>', ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
--- Mover líneas seleccionadas hacia arriba en modo visual con Alt + k
-vim.api.nvim_set_keymap('v', '<A-k>', ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
 
 
 vim.opt.syntax = 'enable' -- Habilita el resaltado de sintaxis
@@ -35,3 +26,5 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
+vim.opt.termguicolors = true
+

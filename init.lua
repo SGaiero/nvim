@@ -66,4 +66,4 @@ require('lazy').setup({
 
 require("config.set")
 require("config.plugins")
-
+require("config.keymaps")
